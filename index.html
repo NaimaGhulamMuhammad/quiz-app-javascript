@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Economica:wght@400;700&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+
+    <!-- Style stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="app logo.png" type="image/x-icon">
+
+    <title>Quiz App</title>
+
+</head>
+<body id="body">
+    <center>
+    <div id="welcome" class="w-box ">
+        
+            <img src="images/app logo.png" alt="Quiz app Logo" ><br>
+            <h1>Lets Test Your Knowledge</h1>
+            <input type="text" placeholder="Enter Your Name" required id="inp">
+            <button class="btn" onclick="start()">Start Quiz</button>
+            <h3> <span>Note</span> Total Number Of Quiz are 10</h3>
+        
+    </div>
+    </center>
+    <div id="questions" class="w-box hide">
+        <h4 id="uname"></h4>
+        <div>
+            <h2 id="quest"></h2>
+            <div id="options"></div>
+        </div>
+        <div id="nxtbtn">
+            <button onclick="next()" class="btn">Next</button>
+        </div>
+    </div>
+    <div id="result" class="w-box hide">
+        <center>
+            <div>
+            <img src="images/congratulation.png" alt="congratulation">
+             <h1> Hurrah!!! congratulations<br> You Got Full Marks</h1>
+             <button class="btn">Try Again</button>
+                <button class="btn">Go To Home</button>
+            </div>
+            <!--<table>
+                <tr>
+                    <td>Student Name</td>
+                    <td id="res"></td>
+                </tr>
+                <tr>
+                    <td> <h3>Total Question</h3></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><h3>Correct</h3></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><h3>Wrong</h3></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><h3>Percentage</h3></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><h3>Remarks</h3></td>
+                    <td></td>
+                </tr>
+            </table>
+            <div class="nxtbtn">
+                <button class="btn">Quiz Over</button>
+                <button class="btn">See Results</button>
+            </div> -->
+        </center>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

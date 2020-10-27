@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Economica;
+    background: linear-gradient(270deg, #1b185e, #8d2408);
+    background-size: 400% 400%;
+
+    -webkit-animation: bluegradient 30s ease infinite;
+    -moz-animation: bluegradient 30s ease infinite;
+    animation: bluegradient 30s ease infinite;
+    
+    
+   
+}
+img{
+    width: 12em;
+    height: 15em;
+}
+.w-box{
+    width: 90vh;
+    height: 70vh;
+    padding: 30px;
+    margin-top: 3em;
+    border-radius: .5em;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+h1,h2,h3{
+    color: purple;
+}
+.w-box input{
+    background-color: transparent;
+    width: 200px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid brown;
+    margin: 30px;
+    color: purple;
+    font-family: economica;
+    padding-left: 2%;
+    font-size: medium;
+    font-weight: bold;
+}
+.btn{
+    font-family: economica;
+    background-color: brown;
+    color: aliceblue;
+    border: none;
+    padding: .5rem;
+    border-radius: .2em;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100px;
+}
+.btn:hover , #questions li:hover{
+    background-color: purple;
+    outline: none;
+    padding-right: 20px;
+    transition: all linear .2s;
+}
+#question li::after{
+    background-color: #8d2408;
+    transition: all ease-in-out .5s;
+}
+.hide{
+    display: none;
+}
+ol{
+    list-style: none;
+    margin-top: 3em;
+}
+#questions ol li{
+    
+    background-color: #1b185e;
+    color: rgb(247, 233, 233);
+    padding: .6em;
+    padding-left: 2em;
+    border-radius: .3em;
+    cursor: pointer;
+    margin: .5em;
+}
+#nxtbtn {
+    float: right;                                                                                                                                                                                                                       
+    margin-top: 5em;
+}
+.res{
+    
+}
+@-webkit-keyframes bluegradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes bluegradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes bluegradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
